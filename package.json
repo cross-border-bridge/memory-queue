@@ -1,0 +1,45 @@
+{
+    "name": "@cross-border-bridge/memory-queue",
+    "version": "2.0.0",
+    "description": "MemoryQueue for Web application",
+    "main": "lib/index.js",
+    "typings": "typings/index.d.ts",
+    "dependencies": {
+    },
+    "peerDependencies": {
+    },
+    "devDependencies": {
+        "del": "*",
+        "gulp": "*",
+        "typescript": "1.7.5",
+        "gulp-typescript": "2.11.0",
+        "gulp-jasmine": "~2.4.1",
+        "gulp-istanbul": "~1.1.1",
+        "browserify": "^13.0.0",
+        "vinyl-source-stream": "^1.1.0",
+        "merge2": "*"
+    },
+    "files": [
+        "lib",
+        "typings"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cross-border-bridge/memory-queue.git"
+    },
+    "scripts": {
+        "prepublish": "npm run clean && npm run build && npm run test",
+        "clean": "gulp clean",
+        "build": "gulp build",
+        "test": "gulp test"
+    },
+    "author": "DWANGO Co., Ltd.",
+    "license": "MIT",
+    "keywords": [
+        "cbb", "rpc", "ipc", "bridge"
+    ],
+    "bugs": {
+        "url": "https://github.com/cross-border-bridge/memory-queue/issues"
+    },
+    "homepage": "https://github.com/cross-border-bridge/memory-queue#readme"
+}
